@@ -2,7 +2,7 @@ using System;
 using System.Reflection;
 // 单例模式的基类
 // 加上 abstract 防止被 new  破坏单例唯一性
-public abstract class BaseSingleton<T> where T : class // 泛型约束 T
+public abstract class BaseManager<T> where T : class // 泛型约束 T
 {
     static readonly Lazy<T> instance = new(() =>
     {
